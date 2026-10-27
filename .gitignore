@@ -1,0 +1,34 @@
+# ---- Python 虚拟环境 ----
+.venv/
+.venv-*/
+venv/
+env/
+
+# ---- Python 缓存 ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.mypy_cache/
+.pytest_cache/
+
+# ---- 结果视频（体积大，可用 inference.py 重新生成；截图仍保留入库）----
+results/*.mp4
+results/*.avi
+results/*.mov
+
+# ---- 测试用原始视频（作业附件，按 README 自行放入 assets/）----
+assets/*.mp4
+assets/*.avi
+assets/*.mov
+assets/*.MOV
+
+# ---- 临时文件与日志 ----
+.tmp/
+*.log
+
+# ---- 编辑器与系统文件 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

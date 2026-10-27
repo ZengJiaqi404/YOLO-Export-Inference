@@ -1,0 +1,32 @@
+{
+  "model": "models\\best.torchscript",
+  "format": "TorchScript (.torchscript)",
+  "size_bytes": 10431659,
+  "size_mb": 9.95,
+  "load_ms": 7.4,
+  "imgsz": 640,
+  "conf": 0.25,
+  "iou": 0.7,
+  "device": "cpu",
+  "source": "assets\\d414.mp4",
+  "source_frames": 264,
+  "frames_processed": 264,
+  "frames_with_detection": 261,
+  "detections_total": 378,
+  "keypoints_total": 1512,
+  "keypoints_per_target": 4.0,
+  "mean_box_conf": 0.7026,
+  "class_counts": {
+    "B2": 70,
+    "B3": 308
+  },
+  "latency_ms_mean": 79.09,
+  "latency_ms_median": 78.65,
+  "latency_ms_p95": 89.85,
+  "latency_ms_min": 67.2,
+  "latency_ms_max": 109.02,
+  "infer_fps": 12.64,
+  "wall_sec": 29.32,
+  "output_video": "results\\best_torchscript_result.mp4",
+  "output_mb": 25.65
+}

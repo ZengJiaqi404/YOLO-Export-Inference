@@ -1,0 +1,133 @@
+{
+  "env": {
+    "python": "3.13.14",
+    "os": "Windows 11",
+    "cpu": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+    "cpu_count": 14,
+    "device": "cpu",
+    "rect": false,
+    "threads_requested": 8,
+    "imgsz": 640,
+    "conf": 0.25,
+    "iou": 0.7,
+    "frames": 264,
+    "repeats": 1,
+    "warmup": 5,
+    "torch": "2.14.1+cu130",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "torch_threads_after_pin": 8,
+    "onnxruntime": "1.31.1",
+    "onnxruntime_providers": [
+      "TensorrtExecutionProvider",
+      "CUDAExecutionProvider",
+      "CPUExecutionProvider"
+    ],
+    "ultralytics": "8.4.188"
+  },
+  "results": [
+    {
+      "model": "models\\best.pt",
+      "format": "PyTorch (.pt)",
+      "size_bytes": 5892455,
+      "size_mb": 5.62,
+      "load_ms": 82.7,
+      "latency_ms_mean": 61.94,
+      "latency_ms_best_round": 61.94,
+      "latency_ms_worst_round": 61.94,
+      "latency_ms_std": 0.0,
+      "fps": 16.14,
+      "detections_total": 378,
+      "frames_with_detection": 261,
+      "detections_per_frame_mean": 1.432,
+      "round_means_ms": [
+        61.94
+      ],
+      "consistency_vs_pt": null
+    },
+    {
+      "model": "models\\best.onnx",
+      "format": "ONNX (.onnx)",
+      "size_bytes": 10195887,
+      "size_mb": 9.72,
+      "load_ms": 16.5,
+      "latency_ms_mean": 36.02,
+      "latency_ms_best_round": 36.02,
+      "latency_ms_worst_round": 36.02,
+      "latency_ms_std": 0.0,
+      "fps": 27.76,
+      "detections_total": 378,
+      "frames_with_detection": 261,
+      "detections_per_frame_mean": 1.432,
+      "round_means_ms": [
+        36.02
+      ],
+      "consistency_vs_pt": {
+        "detections_ref": 378,
+        "detections_other": 378,
+        "class_counts_ref": {
+          "1": 70,
+          "2": 308
+        },
+        "class_counts_other": {
+          "1": 70,
+          "2": 308
+        },
+        "frames_with_count_mismatch": 0,
+        "frames_with_unmatched": 0,
+        "unmatched_ref_boxes": 0,
+        "unmatched_other_boxes": 0,
+        "matched_pairs": 378,
+        "iou_mean": 1.0,
+        "iou_min": 1.0,
+        "conf_delta_mean": 0.0,
+        "conf_delta_max": 0.0,
+        "class_flips_in_matched": 0,
+        "kpt_pixel_delta_mean": 0.0,
+        "kpt_pixel_delta_max": 0.0
+      }
+    },
+    {
+      "model": "models\\best.torchscript",
+      "format": "TorchScript (.torchscript)",
+      "size_bytes": 10431659,
+      "size_mb": 9.95,
+      "load_ms": 32.7,
+      "latency_ms_mean": 73.85,
+      "latency_ms_best_round": 73.85,
+      "latency_ms_worst_round": 73.85,
+      "latency_ms_std": 0.0,
+      "fps": 13.54,
+      "detections_total": 378,
+      "frames_with_detection": 261,
+      "detections_per_frame_mean": 1.432,
+      "round_means_ms": [
+        73.85
+      ],
+      "consistency_vs_pt": {
+        "detections_ref": 378,
+        "detections_other": 378,
+        "class_counts_ref": {
+          "1": 70,
+          "2": 308
+        },
+        "class_counts_other": {
+          "1": 70,
+          "2": 308
+        },
+        "frames_with_count_mismatch": 0,
+        "frames_with_unmatched": 0,
+        "unmatched_ref_boxes": 0,
+        "unmatched_other_boxes": 0,
+        "matched_pairs": 378,
+        "iou_mean": 1.0,
+        "iou_min": 0.99999,
+        "conf_delta_mean": 0.0,
+        "conf_delta_max": 0.0,
+        "class_flips_in_matched": 0,
+        "kpt_pixel_delta_mean": 0.0,
+        "kpt_pixel_delta_max": 0.0
+      }
+    }
+  ]
+}

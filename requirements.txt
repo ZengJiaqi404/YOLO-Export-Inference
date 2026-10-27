@@ -1,0 +1,21 @@
+# 运行环境依赖
+# 实测环境：Windows 11 / Python 3.13.14
+#
+# torch 请按硬件选择官方安装命令（本项目实测用的是 CUDA 13.0 版本，
+# 但性能对比全部在 CPU 上完成，以保证三种格式同硬件可比）：
+#   CPU：   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+#   CUDA：  pip install torch torchvision --index-url https://download.pytorch.org/whl/cu130
+torch>=2.4.0
+torchvision>=0.19.0
+
+# 模型加载/推理/导出
+ultralytics>=8.4.0
+
+# ONNX 导出与推理
+onnx>=1.16.0
+onnxslim>=0.1.30
+onnxruntime>=1.18.0
+
+# 视频读写与绘制
+opencv-python>=4.9.0
+numpy>=1.24.0

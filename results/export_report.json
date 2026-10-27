@@ -1,0 +1,48 @@
+{
+  "weights": "models\\best.pt",
+  "weights_bytes": 5892455,
+  "imgsz": 640,
+  "task": "pose",
+  "names": {
+    "0": "B1",
+    "1": "B2",
+    "2": "B3",
+    "3": "R1",
+    "4": "R2",
+    "5": "R3"
+  },
+  "kpt_shape": [
+    4,
+    2
+  ],
+  "num_params": 2704788,
+  "exports": [
+    {
+      "format": "onnx",
+      "path": "models\\best.onnx",
+      "bytes": 10195887,
+      "size_mb": 9.72,
+      "export_sec": 2.79,
+      "ratio_vs_pt": 1.73,
+      "onnx_nodes": 397,
+      "onnx_initializers": 241,
+      "onnx_opset": {
+        "ai.onnx": 12
+      },
+      "onnx_inputs": [
+        "images[1, 3, 640, 640]"
+      ],
+      "onnx_outputs": [
+        "output0"
+      ]
+    },
+    {
+      "format": "torchscript",
+      "path": "models\\best.torchscript",
+      "bytes": 10431659,
+      "size_mb": 9.95,
+      "export_sec": 0.77,
+      "ratio_vs_pt": 1.77
+    }
+  ]
+}

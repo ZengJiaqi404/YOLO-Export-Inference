@@ -1,0 +1,33 @@
+{
+  "model": "models\\best.pt",
+  "format": "PyTorch (.pt)",
+  "size_bytes": 5892455,
+  "size_mb": 5.62,
+  "load_ms": 73.4,
+  "imgsz": 640,
+  "conf": 0.25,
+  "iou": 0.7,
+  "device": "cpu",
+  "source": "assets\\d414.mp4",
+  "source_frames": 264,
+  "frames_processed": 264,
+  "frames_with_detection": 261,
+  "detections_total": 387,
+  "keypoints_total": 1548,
+  "keypoints_per_target": 4.0,
+  "mean_box_conf": 0.6877,
+  "class_counts": {
+    "B1": 6,
+    "B2": 65,
+    "B3": 316
+  },
+  "latency_ms_mean": 51.9,
+  "latency_ms_median": 53.11,
+  "latency_ms_p95": 60.39,
+  "latency_ms_min": 30.86,
+  "latency_ms_max": 79.58,
+  "infer_fps": 19.27,
+  "wall_sec": 23.79,
+  "output_video": "results\\best_pt_rect_result.mp4",
+  "output_mb": 25.63
+}
